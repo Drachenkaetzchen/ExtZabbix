@@ -1,0 +1,12 @@
+Code Size
+=========
+
+The frontend code is huge, with quite some code duplication. This is hard to maintain and even harder to extend.
+
+API troubles
+============
+
+The API is modeled very closely to what the PHP frontend needs. It is not a generic API and cannot be easily extended
+without touching every API file - if one would want to implement pagination, he would need to touch every single file
+and add (=dupliate) code to make this work.
+

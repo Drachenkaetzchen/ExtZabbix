@@ -1,0 +1,27 @@
+{
+	"projectName": "Zabbix",
+    "packages": [{
+    		"name": "Zabbix",
+            "id": "zabbix",
+            "files": [
+				{{FILES}}
+			]
+		}],
+	"builds": [
+		{
+            "name": "All",
+            "target": "zabbix.js",
+            "compress": true,
+            "packages": [
+                "zabbix"
+            ]
+        },
+        {
+            "name": "Debug",
+            "target": "zabbix-debug.js",
+            "compress": false,
+            "packages": [
+                "zabbix"
+            ]
+        }]
+}

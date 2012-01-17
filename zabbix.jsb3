@@ -1,0 +1,50 @@
+{
+	"projectName": "Zabbix",
+    "packages": [{
+    		"name": "Zabbix",
+            "id": "zabbix",
+            "files": [
+				{"path": "src/frontend/js/Util/","name": "JsonWithAssociationsWriter.js"},
+{"path": "src/frontend/js/Util/","name": "i18n.js"},
+{"path": "src/frontend/js/","name": "Zabbix.js"},
+{"path": "src/frontend/js/Components/Auth/","name": "LoginDialog.js"},
+{"path": "src/frontend/js/Components/Editor/","name": "EditorGrid.js"},
+{"path": "src/frontend/js/Components/Template/","name": "TemplateGrid.js"},
+{"path": "src/frontend/js/Components/Editor/","name": "Editor.js"},
+{"path": "src/frontend/js/Components/Template/","name": "TemplateEditor.js"},
+{"path": "src/frontend/js/Components/Editor/","name": "EditorComponent.js"},
+{"path": "src/frontend/js/Components/Template/","name": "TemplateEditorComponent.js"},
+{"path": "src/frontend/js/Components/Models/","name": "Template.js"},
+{"path": "src/frontend/js/Components/Models/","name": "User.js"},
+{"path": "src/frontend/js/Components/Session/","name": "SessionManager.js"},
+{"path": "src/frontend/js/Ext.ux/","name": "SearchField.js"},
+{"path": "src/frontend/js/Ext.ux/","name": "Iframe.js"},
+{"path": "src/frontend/js/Ext.ux/","name": "ClearableComboBox.js"},
+{"path": "src/frontend/js/","name": "test.js"},
+{"path": "src/frontend/js/ExtJS/Enhancements/","name": "Ext.data.Connection-sessionInjection.js"},
+{"path": "src/frontend/js/Util/","name": "ExceptionWindow.js"},
+{"path": "src/frontend/js/Util/","name": "ServiceCall.js"},
+{"path": "src/frontend/js/Util/","name": "JsonRPCProxy.js"},
+{"path": "src/frontend/js/Util/","name": "Misc.js"},
+{"path": "3rdparty/extjs/examples/ux/statusbar/","name": "StatusBar.js"},
+{"path": "3rdparty/extjs/examples/ux/","name": "TabCloseMenu.js"}
+			]
+		}],
+	"builds": [
+		{
+            "name": "All",
+            "target": "zabbix.js",
+            "compress": true,
+            "packages": [
+                "zabbix"
+            ]
+        },
+        {
+            "name": "Debug",
+            "target": "zabbix-debug.js",
+            "compress": false,
+            "packages": [
+                "zabbix"
+            ]
+        }]
+}
